@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Sora:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", serif;
+  --font-inter: "Inter", sans-serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
+
+  --color-brand-accent: #5B3A5C;
+  --color-brand-secondary: #C97D74;
+  --color-brand-text-dark: #2E2B2E;
+  --color-brand-text-body: #4A454A;
+  
+  --color-brand-bg-hero: #EDE9F5;
+  --color-brand-bg-about: #FAF9FB;
+  --color-brand-bg-projects: #E8EDE6;
+  --color-brand-bg-skills: #F5E9E3;
+  --color-brand-bg-edu: #EDEEF0;
+  --color-brand-bg-contact: #F5EBF1;
+}
+
+body {
+  background-color: var(--color-brand-bg-hero);
+  color: var(--color-brand-text-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar matching our soft pastel palette */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EDE9F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7C0D4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A69EBA;
+}
+
+/* Custom animations and glow shadows */
+.shadow-plum-soft {
+  box-shadow: 0 10px 30px -10px rgba(91, 58, 92, 0.15);
+}
+
+.shadow-plum-hover {
+  box-shadow: 0 20px 40px -15px rgba(91, 58, 92, 0.25);
+}
+
+.shadow-clay-soft {
+  box-shadow: 0 10px 30px -10px rgba(201, 125, 116, 0.15);
+}
+
+
